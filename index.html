@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- My personal website -->
+<!-- written by Jeremy Sceuerman -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://jerserver5712.ddns.net/personal-site">
+    <meta property="og:type" content="Portfolio">
+    <meta property="og:title" content="Jeremy Scheuerman's Digital Portfolio">
+    <meta property="og:image" content="https://jerserver5712.ddns.net/personal-site/images/portfolio_banner.png">
+    <meta name="google-site-verification" content="h_Rs_65Ej4hme9zrpmAmr8CaOQ4oAoS6uLJYvFbvbmo" />
+    <!-- google verification -->
+    <meta name="author" content="Jeremy Scheuerman">
+    <!-- meta tags which include preview of website and thumbnail -->
+    <meta property="og:description"
+        content="My personal website going into detail about my work, skillset, and knowledge in the tech field.">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- without this jquery navbar togglign was not working properly do not remove -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
+    <!--use this above link to include bootstrap in your project -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- this link above includes bootstrap icons in your project -->
+    <link rel="stylesheet" href="styles.css" />
+    <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    <!-- font-awesome  -->
+    <!--load all styles -->
+    <!-- Map box include -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- <link rel="icon" href="images/Cornelius_dad_icon.png"> -->
+    <!-- set icon -->
+    <!-- title navbar -->
+</head>
+
+<title>Group 2s 465 Portfolio</title>
+
+<body class="content">
+    <div id="about"></div>
+    <!-- take back to top of the page -->
+    <nav class="autohide navbar-main navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <!-- container class used to create a margin -->
+            <div class="navbar-brand main-title ">Group 2s Digital Portfolio</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- targets the nav menu so making it that that is what collapses in the hamburger menu -->
+                <!-- aria controls are for accesibility controls  -->
+                <span class="navbar-toggler-icon">
+                    <!-- adds hamburger symbol -->
+                </span>
+            </button>
+            <!-- makes it so that it will collapse on smaller screens like a phone or half window -->
+            <div class="collapse navbar-collapse py-3" id="navmenu">
+                <ul class="navbar-nav nav-fill ms-auto">
+                    <!-- ms-auto makes it scale -->
+                    <li class="nav-item button custom-button">
+                        <a class="nav-link button-text text-center" href=" #about">About us</a>
+                    </li>
+                    <li class="nav-item button custom-button">
+                        <a class="nav-link button-text text-center" href="#breakout">Breakout Sessions</a>
+                    </li>
+                    <li class="nav-item button custom-button">
+                        <a class="nav-link button-text text-center" href="#placeholder_1">Place Holder_1 </a>
+                    </li>
+                    <li class="nav-item button custom-button">
+                        <a class="nav-link button-text text-center" href="#Resumes">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="section-title about">About Us
+    </h1>
+    <div class="align-image">
+        <img src="images\me.jpg" class="picture pic-me rounded" alt="Me">
+    </div>
+    <div class="body-text">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora architecto ab quis, sint veniam error vel
+            repellendus magni mollitia suscipit unde optio voluptate cum adipisci asperiores, nobis fuga incidunt
+            distinctio. Iusto quasi tempore rerum modi? Inventore nulla perspiciatis sunt ipsum rerum assumenda est
+            tempora, voluptatem eaque saepe pariatur illo deserunt?
+        </p>
+        <a id="breakout"></a>
+    </div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <a id="Breakout Sessions"><a>
+            <!-- anchor link for href -->
+            <h1 class="section-title">Breakout Sessions
+            </h1>
+            <div class="body-text">
+                <p>Breakkout Sessions text
+                </p>
+            </div>
+            <h1 class="sub-section-title exp">Professional Experience</h1>
+            <a id="projects"><a>
+                    <h1 class="exp sub-section-title">Personal Projects</h1>
+                    <div class="flex-container">
+                    </div>
+                    <h1 class="section-title">
+                        Links
+                    </h1>
+                    <ul class=" grid-container skill-list links-body">
+                        <li><i class="fab fa-linkedin"></i> <a class="link"
+                                href="https://www.linkedin.com/in/jeremy-scheuerman-935-profile/"
+                                target="_blank">Linkedin</a>
+                        </li>
+                        <li><i class="fab fa-github"></i> <a class="link" href="https://github.com/therenow9"
+                                target="_blank">Github</a></li>
+                        <li><i class="fas fa-file"></i> <a class="link"
+                                href="https://drive.google.com/file/d/1IZ2CHOD_Yh3TbKcmr8luV-RZxQczZWo-/view?usp=sharing"
+                                target="_blank"> Resume</a></li>
+                    </ul>
+                    <a id="links"></a>
+                    <!-- info to contact me -->
+                    <h1 class="section-title">Contact Me
+                    </h1>
+                    <p class="body-text contact">If you are an employer, recruiter, or just have any questions about my
+                        work
+                        feel
+                        free to message me on Linkedin or email me at:
+                    </p>
+                    <div class="skill-list"><i class="fas fa-envelope-square"></i>
+                        <a class="link" href="mailto:jerm.s222@gmail.com" target="_blank"
+                            id="mail">jerm.s222@gmail.com</a>
+                    </div>
+
+                    <!-- This JS code fixes the navbar autoclosing issue, must stay here at the bottom to work -->
+                    <footer>
+                        <div id="earl-sprite-container">
+                            <div id="earl-sprite"></div>
+                        </div>
+                    </footer>
+                    <script src="scripts.js"></script>
+</body>
+
+</html>

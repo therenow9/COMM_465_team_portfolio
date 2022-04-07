@@ -1,0 +1,316 @@
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  background-color: rgb(203, 215, 246);
+  /* adding padding to top to put about title below navbar */
+}
+.navbar-main {
+  background-color: rgb(4, 1, 175);
+  height: 70px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  /* navbar tweaking */
+}
+.space {
+  /* some small padding */
+  padding-top: 2.5%;
+}
+.main-title {
+  background-color: rgb(4, 1, 175);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  box-shadow: none;
+  /* main title for site */
+}
+.button-text {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  /* text for navbar dropdown  */
+}
+.button-text:hover {
+  color: rgb(255, 255, 255);
+  /* navbar text color change on hover */
+}
+.button {
+  padding-top: 15px;
+  background-color: rgb(4, 1, 175);
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+.button:hover {
+  background-color: rgb(35, 32, 190);
+}
+/* navbar change background on hover */
+.custom-button {
+  height: 70px;
+  text-align: center;
+}
+/* format some buttons for navbar */
+.section-title {
+  font-size: 2.6rem;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+}
+
+.sub-section-title {
+  font-size: 1.9rem;
+  font-family: Verdana, sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+.exp {
+  font-size: 2.5rem;
+  padding-bottom: 1.5%;
+}
+.body-text {
+  font-size: 1.5rem;
+  font-family: Hand;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1%;
+  text-align: center;
+}
+.caption-text {
+  padding-top: 0%;
+  font-size: 1.4rem;
+  font-family: Hand;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.skill-list {
+  font-size: 2rem;
+  font-family: Hand;
+  list-style-type: none;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+.links-body {
+  margin-top: 1%;
+  margin-bottom: 1.3%;
+}
+/* formatting text sizes fonts and colors */
+
+/* pictures and flexbox */
+.flex-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.grid-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30%);
+  grid-template-rows: repeat(auto, 90%);
+  grid-gap: 0.3rem;
+  justify-content: space-evenly;
+}
+.grid-item {
+  justify-content: center;
+  text-align: center;
+}
+.picture {
+  /* set width to a percentage */
+  height: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  align-self: center;
+}
+.rounded {
+  border-radius: 25px;
+  /* rounds corners */
+}
+.align-image {
+  /* nest around image tag to align single image */
+  text-align: center;
+}
+.pic-me {
+  width: 15%;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+/* resize some pictures to scale */
+.link {
+  padding-bottom: 6%;
+}
+.link:hover {
+  color: blue;
+}
+.navbar-toggler-icon {
+  font-size: 0.4rem;
+  transform: scale(2, 1);
+}
+.navbar-toggler {
+  font-size: 0.4rem;
+  transform: scale(1.2, 2);
+}
+/* to resize navbar toggler icon, this can be finnicky */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* remove navbar highlight on click */
+.navbar-toggler:focus {
+  background-color: rgb(4, 1, 175);
+}
+.custom-button:focus {
+  background-color: rgb(41, 39, 211);
+}
+/* remove border when dropped down adds different background color instead */
+.note {
+  font-style: italic;
+  font-weight: bold;
+}
+.table-flex {
+  text-align: center;
+}
+#skills {
+  padding-top: 55px;
+  margin-top: -55px;
+}
+#experience {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+#projects {
+  padding-top: 75px;
+  margin-top: -75px;
+}
+#about {
+  padding-top: 75px;
+  margin-top: -75px;
+}
+#links {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+#mail {
+  padding-bottom: 30px;
+}
+/* this will make it so clicking these links
+will take you to the correct spot on the page
+before this i was having problems with the anchor adding padding and a negative margin seems to be a good work around for this */
+
+/* animate sprite */
+#earl-sprite-container {
+  padding-top: 15px;
+  display: block;
+  /* animation: move 15s infinite forwards; */
+  margin-left: -5%;
+  margin-right: auto;
+  overflow: hidden;
+  /* make it so the scroll bar dosent show up at the bottom */
+}
+#earl-sprite {
+  width: 102px;
+  /* spritesheet width divided by number of frames in sprite sheet, 306/3 */
+  height: 54px;
+  /* height of actual image */
+  background: url(images/sprites/earl/slug_102x54_strip3.png) 0px 0px;
+  /* animating this sprite */
+  transform: scaleX(-1);
+  /* flip image to the other side */
+  animation: play steps(3) infinite 1.2s, move 40s linear infinite;
+  /* aninmates the actual sprite */
+  /* animation: move infinite; */
+  overflow: hidden;
+}
+@keyframes play {
+  100% {
+    background-position: 306px;
+    /* entire sprite sheet width */
+  }
+}
+@keyframes move {
+  from {
+    margin-left: -5%;
+  }
+  to {
+    margin-left: 105%;
+  }
+}
+
+.mobile-view {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  /* MEdia queries to adjust all of these relative to phone screens */
+  .main-title {
+    font-size: 0.8rem;
+    transform: scale(1, 1.5);
+  }
+  .navbar-main {
+    background-color: rgb(4, 1, 175);
+    height: 70px;
+  }
+  .button-text {
+    padding-top: 0px;
+    font-size: 1rem;
+    height: 15px;
+  }
+  .caption-text {
+    padding-top: 2%;
+    font-size: 1.1rem;
+  }
+  .custom-button {
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .section-title {
+    font-size: 2.1rem;
+  }
+  .sub-section-title {
+    font-size: 1.6rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .exp {
+    font-size: 1.9rem;
+  }
+  .body-text {
+    font-size: 1.2rem;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 2%;
+  }
+  .skill-list {
+    font-size: 1.4rem;
+  }
+  #mail {
+    padding-bottom: 20px;
+  }
+  #earl-sprite {
+    animation: play steps(3) infinite 1s, move 15s linear infinite;
+  }
+  #earl-sprite-container {
+    margin-left: -100px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, 45%);
+  }
+}
+@media print {
+  .content {
+    background-color: rgb(255, 255, 255);
+  }
+}
