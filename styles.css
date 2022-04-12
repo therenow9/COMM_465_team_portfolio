@@ -44,11 +44,11 @@
 .button:hover {
   background-color: rgb(127, 44, 183);
 }
-/* navbar change background on hover */
-.custom-button {
-  height: 70px;
-  text-align: center;
+.button:active {
+  background-color: rgb(127, 44, 183);
 }
+/* navbar change background on hover */
+
 /* format some buttons for navbar */
 .section-title {
   font-size: 2.6rem;
@@ -180,26 +180,23 @@
 .table-flex {
   text-align: center;
 }
-#skills {
-  padding-top: 55px;
-  margin-top: -55px;
-}
-#experience {
-  padding-top: 60px;
-  margin-top: -60px;
-}
-#projects {
-  padding-top: 75px;
-  margin-top: -75px;
-}
 #about {
   padding-top: 75px;
   margin-top: -75px;
 }
-#links {
-  padding-top: 20px;
-  padding-bottom: 0px;
+#breakout {
+  padding-top: 50px;
+  margin-top: -50px;
 }
+#bios {
+  padding-top: 95px;
+  margin-top: -95px;
+}
+#resumes {
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
 #mail {
   padding-bottom: 30px;
 }
