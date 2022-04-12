@@ -2,11 +2,11 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 80px;
-  background-color: rgb(203, 215, 246);
+  background-color: rgb(244, 195, 248);
   /* adding padding to top to put about title below navbar */
 }
 .navbar-main {
-  background-color: rgb(4, 1, 175);
+  background-color: rgb(105, 1, 175);
   height: 70px;
   padding-top: 0%;
   padding-bottom: 0%;
@@ -17,7 +17,7 @@
   padding-top: 2.5%;
 }
 .main-title {
-  background-color: rgb(4, 1, 175);
+  background-color: rgb(105, 1, 175);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3em;
@@ -37,12 +37,12 @@
 }
 .button {
   padding-top: 15px;
-  background-color: rgb(4, 1, 175);
+  background-color: rgb(105, 1, 175);
   color: rgb(255, 255, 255);
   font-size: large;
 }
 .button:hover {
-  background-color: rgb(35, 32, 190);
+  background-color: rgb(127, 44, 183);
 }
 /* navbar change background on hover */
 .custom-button {
@@ -256,7 +256,6 @@ before this i was having problems with the anchor adding padding and a negative 
     transform: scale(1, 1.5);
   }
   .navbar-main {
-    background-color: rgb(4, 1, 175);
     height: 70px;
   }
   .button-text {
