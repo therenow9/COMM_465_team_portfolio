@@ -97,7 +97,6 @@
 }
 /* formatting text sizes fonts and colors */
 
-/* pictures and flexbox */
 .flex-container {
   box-sizing: border-box;
   display: flex;
@@ -108,16 +107,18 @@
   margin-right: 2%;
 }
 .grid-container {
+  align-items: center;
+  text-align: center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 30%);
+  grid-template-columns: repeat(auto-fit, 45%);
   grid-template-rows: repeat(auto, 90%);
   grid-gap: 0.3rem;
   justify-content: space-evenly;
 }
+
 .grid-item {
   justify-content: center;
   text-align: center;
@@ -286,6 +287,9 @@ before this i was having problems with the anchor adding padding and a negative 
     margin-left: 7%;
     margin-right: 7%;
     padding-top: 2%;
+  }
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, 75%);
   }
   .skill-list {
     font-size: 1.4rem;
