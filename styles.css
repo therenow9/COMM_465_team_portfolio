@@ -1,6 +1,11 @@
-.content {
+/* GENERAL STYLES */
+body {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.content {
   padding-top: 80px;
   background-color: rgb(244, 195, 248);
   /* adding padding to top to put about title below navbar */
