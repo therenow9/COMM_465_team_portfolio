@@ -4,7 +4,45 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+h1 {
+  font-size: 2.6rem;
+  font-family: Verdana, sans-serif;
+}
 
+h2 {
+  font-size: 1.9rem;
+}
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.5rem;
+  font-family: Hand;
+  padding-top: 1%;
+}
+
+/* UTILITIES */
+.flex-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.grid-container {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 45%);
+  grid-template-rows: repeat(auto, 90%);
+  justify-content: space-evenly;
+}
+
+.grid-item {
+  justify-content: center;
+}
 .content {
   padding-top: 80px;
   background-color: rgb(244, 195, 248);
@@ -55,31 +93,12 @@ body {
 /* navbar change background on hover */
 
 /* format some buttons for navbar */
-.section-title {
-  font-size: 2.6rem;
-  font-family: Verdana, sans-serif;
-  text-align: center;
-}
 
-.sub-section-title {
-  font-size: 1.9rem;
-  font-family: Verdana, sans-serif;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
-}
 .exp {
   font-size: 2.5rem;
   padding-bottom: 1.5%;
 }
-.body-text {
-  font-size: 1.5rem;
-  font-family: Hand;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 1%;
-  text-align: center;
-}
+
 .caption-text {
   padding-top: 0%;
   font-size: 1.4rem;
@@ -102,32 +121,6 @@ body {
 }
 /* formatting text sizes fonts and colors */
 
-.flex-container {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-.grid-container {
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 45%);
-  grid-template-rows: repeat(auto, 90%);
-  grid-gap: 0.3rem;
-  justify-content: space-evenly;
-}
-
-.grid-item {
-  justify-content: center;
-  text-align: center;
-}
 .picture {
   /* set width to a percentage */
   height: auto;
@@ -148,7 +141,10 @@ body {
   padding-top: 20px;
   padding-bottom: 15px;
 }
-
+.pic-bakery {
+  width: 25%;
+  height: auto;
+}
 /* resize some pictures to scale */
 .link {
   padding-bottom: 6%;
@@ -194,9 +190,13 @@ body {
   padding-top: 50px;
   margin-top: -50px;
 }
+#techdive {
+  padding-top: 50px;
+  margin-top: -50px;
+}
 #bios {
-  padding-top: 95px;
-  margin-top: -95px;
+  padding-top: 110px;
+  margin-top: -110px;
 }
 #resumes {
   padding-top: 20px;
@@ -249,11 +249,29 @@ before this i was having problems with the anchor adding padding and a negative 
   }
 }
 
-.mobile-view {
-  display: none;
-}
 @media screen and (min-width: 320px) and (max-width: 800px) {
   /* MEdia queries to adjust all of these relative to phone screens */
+
+  /* GENERAL STYLES */
+  h1 {
+    font-size: 2.1rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 2%;
+  }
+
+  /* UTILITIES */
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, 75%);
+  }
+
+  /* CUSTOM STYLES */
   .main-title {
     font-size: 0.8rem;
     transform: scale(1, 1.5);
@@ -276,26 +294,11 @@ before this i was having problems with the anchor adding padding and a negative 
     width: 100%;
     padding-bottom: 15px;
   }
-  .section-title {
-    font-size: 2.1rem;
-  }
-  .sub-section-title {
-    font-size: 1.6rem;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
+
   .exp {
     font-size: 1.9rem;
   }
-  .body-text {
-    font-size: 1.2rem;
-    margin-left: 7%;
-    margin-right: 7%;
-    padding-top: 2%;
-  }
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, 75%);
-  }
+
   .skill-list {
     font-size: 1.4rem;
   }
