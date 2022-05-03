@@ -145,6 +145,14 @@ p {
   width: 25%;
   height: auto;
 }
+.pic-watch {
+  width: 17.5%;
+  height: auto;
+}
+.pic-rek {
+  width: 35%;
+  height: auto;
+}
 /* resize some pictures to scale */
 .link {
   padding-bottom: 6%;
