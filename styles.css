@@ -39,7 +39,6 @@ p {
   grid-template-rows: repeat(auto, 90%);
   justify-content: space-evenly;
 }
-
 .grid-item {
   justify-content: center;
 }
@@ -140,6 +139,11 @@ p {
   padding-top: 20px;
   padding-bottom: 15px;
 }
+.pic-us {
+  width: 25%;
+  height: auto;
+  padding-top: 20px;
+}
 .pic-bakery {
   width: 25%;
   height: auto;
@@ -229,7 +233,7 @@ before this i was having problems with the anchor adding padding and a negative 
   /* spritesheet width divided by number of frames in sprite sheet, 306/3 */
   height: 54px;
   /* height of actual image */
-  background: url(images/sprites/earl/slug_102x54_strip3.png) 0px 0px;
+  background: url(images/earl/slug_102x54_strip3.png) 0px 0px;
   /* animating this sprite */
   transform: scaleX(-1);
   /* flip image to the other side */
